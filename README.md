@@ -45,9 +45,31 @@ To go back to Python system installed:
 
 `$ pip install Flask`
 
-It's not recommended but this will also work:
+It's not recommended but this will also work (System-wide install):
 
 `$ sudo pip install Flask`
+
+### Running flask application
+
+Setup FLASK_APP environment variable:
+
+`$ export FLASK_APP=hello.py`<br>
+`$ flask run`<br>
+` * Running on http://127.0.0.1:5000/`
+
+On Windows use **_set_** instead of *export*.
+
+To enable using external IP, run flask as:
+
+`flask run --host=0.0.0.0`
+
+### Debug Mode 
+
+**NOTE: Do not use this in Production!**
+
+`$ export FLASK_DEBUG=1`<br>
+`$ flask run`
+
 
 
 
